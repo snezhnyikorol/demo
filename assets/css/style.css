@@ -1,0 +1,44 @@
+#quiz, #result {
+    display: none;
+    padding: 40px 0;
+}
+
+#start .radio-custom-label:nth-child(1) {
+    border-right: 5px solid #ffffff;
+}
+
+#start .radio-custom-label:nth-child(2) {
+    border-left: 5px solid #ffffff;
+}
+
+/* Customize the label (the container) */
+.radio-custom-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*height: calc(100vh - 20px);*/
+    /*margin: 10px 0;*/
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #eee;
+}
+
+/* Hide the browser's default checkbox */
+.radio-custom-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.radio-custom-label:hover {
+    background-color: #ccc;
+}
+
