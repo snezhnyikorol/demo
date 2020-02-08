@@ -6,8 +6,8 @@ $(document).ready(function() {
     $("input[name='start']").on('change', function() {
         $('#start').fadeToggle("fast", ()=> $('#quiz').fadeToggle("fast"));
     });
-    $("input[type='range']").on('change', function() {
-        $('#rangeValue').text($("input[type='range']").val());
+    $("#customRange1").on('change', function() {
+        $('#range1Value').text($("input[type='range']").val());
     });
 });
 
